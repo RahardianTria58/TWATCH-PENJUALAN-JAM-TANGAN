@@ -11,9 +11,9 @@
  <body>
     <div class="container">
     <div class="sidebar">
-        <a href="">Home</a>
+        <a href="admin.php">Home</a>
         <a href="">Categories</a>
-        <a href="">Transaction</a>
+        <a href="transaksi/transaksi.php">Transaction</a>
     </div>
     <div class="right_content">
     <div class="navbar">

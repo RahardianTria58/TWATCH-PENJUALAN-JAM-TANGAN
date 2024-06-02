@@ -2,8 +2,8 @@
 include 'koneksi.php';
 
 if(isset($_POST['register'])) {
-    $username = $_POST['username'];
     $email = $_POST['email'];
+    $username = $_POST['username'];
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
     // Check for empty fields
@@ -16,7 +16,7 @@ if(isset($_POST['register'])) {
         ";
     } else {
         // Prepare SQL statement
-        $sql = "INSERT INTO admin (email, password, username) VALUES ('$email', '$password', '$username')";
+        $sql = "INSERT INTO admin (email, username, password) VALUES ('$email','$username','$password')";
         // Execute query
         if(mysqli_query($koneksi, $sql)) {
             echo "  

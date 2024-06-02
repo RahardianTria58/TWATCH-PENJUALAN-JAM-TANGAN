@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Register</title>
     <style>
-        input[type="text"], input[type="password"] {
+        input[type="text"], input[type="email"], input[type="password"] {
             width: 10%;
             padding: 3px;
             margin: 5px 0 15px 0;
@@ -28,13 +28,15 @@
     </style>
 </head>
 <body>
-    <form action="/submit_register" method="post">
+    <form action="proses-register.php" method="post">
         <h1>Daftar Akun Baru</h1>
+        <label for="username">Email:</label>
+        <input type="email" id="email" name="email">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username">
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
-        <input type="submit" value="Daftar"><br>
+        <input type="submit" name="register" value="Daftar"><br>
     </form>
     <a href="login.html">Sudah punya akun? Masuk di sini.</a>
 </body>
